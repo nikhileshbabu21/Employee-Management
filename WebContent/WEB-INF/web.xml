@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EmpDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>Index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>EmpServlet</servlet-name>
+    <servlet-class>com.emp.EmpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpServlet</servlet-name>
+    <url-pattern>/employee.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Empdelete</servlet-name>
+    <servlet-class>com.emp.Empdelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Empdelete</servlet-name>
+    <url-pattern>/deleteEmp.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SavadataServlet</servlet-name>
+    <servlet-class>com.emp.SavadataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SavadataServlet</servlet-name>
+    <url-pattern>/savadata.do</url-pattern>
+  </servlet-mapping>
+</web-app>
